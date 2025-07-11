@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito',  sans-serif;
+    line-height:1.5;
+}
+
+.nav-text{
+    color:#36454F !important;
+    font-size:1.1rem;
+    transition: color 0.3s ease;
+}
+.nav-text:hover{
+    color:#000000 !important;
+}
+/* Hero */
+
+.hero{
+    background-color: #B2E0D6;
+}
+.hero-text{
+    color:#36454F;
+}
+.hero-h1{
+    font-size:3rem;
+}
+.hero-p{
+    font-size:1.4rem;
+}
+.hero-img{
+    height:100vh;
+    object-fit: cover;
+}
+@keyframes fadeInUp {
+  0% {opacity: 0; transform: translateY(30px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+.carousel-caption h1, .carousel-caption p {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+}
+
+/* Feature */
+
+.feature-card{
+    border:none;
+    transition:all 0.3s ease;
+    background-color: #B2E0D6;
+    color: #36454F;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    margin-bottom:50px;
+    
+}
+.feature-card:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f8fefc;
+}
+.feature-card, .city-card {
+  animation: fadeInUp 0.9s ease-in-out;
+}
+.feature-heading{
+    font-size: 2.2rem;
+    color:#36454F;
+    font-weight: 600;
+}
+.card-text{
+    text-align: justify;
+}
+
+/* Mission section */
+.mission-section{
+    background-color: #36454F; 
+    color: #B2E0D6;
+    
+}
+.mission-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #B2E0D6;
+}
+
+.mission-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  
+}
+
+/* Cities */
+.city-card{
+    border:none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.city-card:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.city-card img{
+    height:200px;
+    object-fit: cover;
+}
+.btn-safar{
+    background-color: #6cddc4;
+    color:#ffffff;
+    border:none;
+    transition: background-color 0.3s ease;
+}
+.btn-safar:hover {
+  background-color: #2c3a44;
+  color: #ffffff;
+}
+.collapse {
+  transition: all 0.4s ease;
+}
+/* Contact */
+.contact-form{
+    background-color: #36454F;
+}
+.form-control{
+    border: 3px solid #B2E0D6;
+}
+.form-control:focus {
+  box-shadow: 0 0 8px rgba(108, 221, 196, 0.7);
+}
+.btn-safar:hover {
+  background-color: #2c3a44;
+  transform: scale(1.05);
+}
